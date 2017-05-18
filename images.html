@@ -1,0 +1,96 @@
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr.js"></script> 
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="morphext.js"></script>
+    <script src="morphext.min.js"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<title>Images</title>
+</head>
+    
+<body>
+	<header class="cd-header">
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</header>
+    
+    
+	<div id="memes" style="text-align:center">
+            <span id="js-rotating">Images</span>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+        <script src="morphext.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "fadeInUpBig",
+                complete: function () {
+                    throw new Error('');
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+        </script>
+	
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li class="cd-selected">
+				<a href="home.html">Home</a>
+			</li>
+
+			<li>
+				<a href="images.html">Images</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+			<li>
+				<a href="media.html">Media</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+		</ul>
+
+		<span class="cd-marker color-1"></span>
+	</nav>
+    
+    <div class="gallery cf">
+  <div>
+    <img src="http://cdn3.craftsy.com/blog/wp-content/uploads/2014/12/milky-way-over-france-scaled.jpg" />
+  </div>
+  <div>
+    <img src="https://cdn.fstoppers.com/styles/full/s3/media/2016/02/patrick_hall_astro_photography_dead_trees_charleston.jpg" />
+  </div>
+  <div>
+    <img src="http://www.shariblog.com/wp-content/uploads/2015/11/S111.jpg" />
+  </div>
+  <div>
+    <img src="http://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2015/D810A-Astrophotography-general-article/Media/Takayuki-Yoshida-D810A-Horsehead-Nebula.jpg" />
+  </div>
+  <div>
+    <img src="http://mountainstoseaworkshops.com/wp-content/uploads/2014/03/DSC_3094-Edit21.jpg" />
+  </div>
+</div>
+    
+    <h2>This gallery will expand as users further provide their photographs to us!</h2>
+
+
+    
+</body>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</html>

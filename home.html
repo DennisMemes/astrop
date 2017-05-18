@@ -1,0 +1,79 @@
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/main.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="morphext.js"></script>
+    <script src="morphext.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
+   
+	<title>Home</title>
+</head>
+<body>
+	<header class="cd-header">
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</header>
+	
+	<main>
+		
+
+             <div id="memes" style="text-align:center">
+            <span id="js-rotating">Astrophotography.com, Welcome!</span>
+                 <p1>On Astrophotography.com you will find images and guides to astrophotography. Check the media page to learn about this special type of photography or check out the images page to see some examples! Start navigating the website by pressing the icon in the top right corner!</p1>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+        <script src="morphext.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "flipInX",
+                complete: function () {
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+        </script>
+        
+        
+        
+	</main>
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li class="cd-selected">
+				<a href="home.html">Home</a>
+			</li>
+
+			<li>
+				<a href="images.html">Images</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+			<li>
+				<a href="media.html">Media</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+		</ul>
+
+		<span class="cd-marker color-1"></span>	
+	</nav>
+    
+
+    
+</body>
+<script src="js/main.js"></script>
+</html>

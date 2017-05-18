@@ -1,0 +1,75 @@
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr.js"></script> 
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="morphext.js"></script>
+    <script src="morphext.min.js"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<title>About</title>
+</head>
+    
+<body>
+	<header class="cd-header">
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</header>
+    
+    
+	<div id="memes" style="text-align:center">
+            <span id="js-rotating">About us</span>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+        <script src="morphext.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "fadeInUpBig",
+                complete: function () {
+                    throw new Error('');
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+        </script>
+	
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li class="cd-selected">
+				<a href="home.html">Home</a>
+			</li>
+
+			<li>
+				<a href="images.html">Images</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+			<li>
+				<a href="media.html">Media</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+		</ul>
+
+		<span class="cd-marker color-1"></span>
+	</nav>
+    
+<p>This purpose of this website is to teach about Astrophotography and also to get people interested in it. We work to expand the website as time moves on to provide more guides and more user-submitted photography for you, without any cost! We are currently not interested in making a profit and the costs of running this website is very low. We are just doing it for fun and for your pleasure! It is in our main interest that you, the users, find this website entertaining and informational.<br><br>Contact us if you have any questions or suggestions for improvements on our website. You will find contact information under the contact tab!</p>
+    
+</body>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</html>

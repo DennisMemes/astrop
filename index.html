@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style%20particles.css">  
+  <link rel="stylesheet" type="text/css" href="css/Login%20box.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+
+<body>
+<div id="particles-js"></div> 
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="js/Particles%20Login.js"></script>
+    
+ <div id="container">
+     
+        <form name="login">
+            <label for="userid">Username:</label>
+            <input type="text" id="userid">
+            
+            <label for="pswrd">Password:</label>
+            <input type="password" id="pswrd">
+            
+            <input type="button" id="btn" onclick="check(this.form)" value="Login"/>
+        </form>
+     
+            <div id="lower">
+                <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+            </div>
+    </div>
+    
+     <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "user" && form.pswrd.value == "pass") {
+                    window.open('home.html', "_self")/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Wrong password and/or username")/*displays error message*/
+                }
+            }
+         
+         
+         document.getElementById("pswrd")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("btn").click();
+    }
+});
+        </script>
+
+</body>
+    
+</html>
